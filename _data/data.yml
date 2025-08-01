@@ -61,7 +61,7 @@ projects:
   assignments:
     - title: 无人驾驶的道路风险区域预测模型研究
       time: 2024.11 - 2025.6
-      tagline: |
+      details: |
         项目成果已被 IROS2025 接收，提出 DPGP 框架，融合 2D 图像语义与 3D 几何结构信息实现“Ghost Probe Zone”预测。
         1. 定义任务数据背景，基于自采及KITTI数据集，标注出道路风险区域边界，引入高斯模糊生成 soft label
         2. 选用 Faster R-CNN、YOLOv8、RT-DETRv2 为 baseline，评估 Recall/Precision/F1
@@ -70,7 +70,7 @@ projects:
            RGB+Grad+PCD得到最高的精度指标：0.9150 的Recall、0.9761的Precision、 0.9446的 F1 Score，相较于基线性能最优：Recall 0.9150，Precision 0.9761，F1 Score 0.9446
     - title: 华为异腾开源社区生态建设（鼎桥）
       time: 2021.5 - 2023.9
-      tagline: |
+      details: |
         1. 负责开源模型迁移到昇腾 NPU，完成推理部署、训练验证全流程
         2. 基于 Ascend 310/910 实现模型加载、运行分析、算子调度优化
         3. 编写 Benchmark 脚本，统计推理延迟、吞吐、NPU 利用率，输出性能报告
