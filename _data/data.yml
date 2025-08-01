@@ -63,9 +63,11 @@ projects:
       time: 2024.11 - 2025.6
       tagline: |
         项目成果已被 IROS2025 接收，提出 DPGP 框架，融合 2D 图像语义与 3D 几何结构信息实现“Ghost Probe Zone”预测。
-        - 自建数据集，标注道路风险边界，引入高斯热力图 soft label
-        - 选用 Faster R-CNN、YOLOv8、RT-DETRv2 为 baseline，评估 Recall/Precision/F1
-        - RGB+Grad+PCD 融合结果：Recall 0.9150，Precision 0.9761，F1 Score 0.9446
+        1. 定义任务数据背景，基于自采及KITTI数据集，标注出道路风险区域边界，引入高斯模糊生成 soft label
+        2. 选用 Faster R-CNN、YOLOv8、RT-DETRv2 为 baseline，评估 Recall/Precision/F1
+        3. 提出DPGP 框架，融合2D 图像语义信息与 3D 几何结构信息，实现对潜在盲区（ghost probe zone）的高精度预测
+        4. 详细设计并完成各种输入数据下的消融实验，分析各数据对实验结果影响， 
+           RGB+Grad+PCD得到最高的精度指标：0.9150 的Recall、0.9761的Precision、 0.9446的 F1 Score，相较于基线性能最优：Recall 0.9150，Precision 0.9761，F1 Score 0.9446
     - title: 华为异腾开源社区生态建设（鼎桥）
       time: 2021.5 - 2023.9
       tagline: |
