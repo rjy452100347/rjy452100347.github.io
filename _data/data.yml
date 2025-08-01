@@ -73,8 +73,8 @@ experiences:
 projects:
   title: 项目经验
   assignments:
-  - title: 无人驾驶的道路风险区域预测模型研究
-    tagline: |
+    - title: 无人驾驶的道路风险区域预测模型研究
+      tagline: |
         - 负责调研当前目标检测主流算法，用于产品研发升级改造
         - 负责视觉需求分析、模型选型及任务实现
         - 编写相关技术文档与专利申请材料
