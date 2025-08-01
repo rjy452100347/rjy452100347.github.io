@@ -2,98 +2,90 @@ sidebar:
   position: left
   about: false
   education: false
-
   name: 饶家义
-  tagline: 算法工程师 | 视觉/信号感知/无人驾驶
-  avatar: profile.png  # 请将头像放入 assets/images/ 文件夹
-
+  tagline: 算法工程师
+  avatar: profile.png
   email: 452100347@qq.com
-  phone: 13330609937
+  phone: '13330609937'
   timezone: Asia/Shanghai
-  website:
-  github:
-  linkedin:
   location: 四川成都
-  citizenship: China
-
   languages:
     title: 语言能力
     info:
-    - idiom: 中文
-      level: 母语
-    - idiom: 英文
-      level: CET-6
-
+      - idiom: 中文
+        level: 母语
+      - idiom: 英文
+        level: CET-6
   interests:
     title: 兴趣
     info:
-    - item: 技术演讲
-    - item: 开源贡献
-    - item: 图像视觉
-
-career-profile:
-  title: 职业概况
-  summary: |
-    拥有丰富的算法工程与视觉识别开发经验，擅长跨模态数据分析与深度学习模型部署，熟悉 Ascend NPU、MindSpore、ONNX 等部署平台。具备优秀沟通能力，能独立承担从算法设计、训练到推理验证的全流程任务。
+      - item: 技术演讲
+      - item: 系统演示
+      - item: 视觉算法
 
 education:
   title: 教育背景
   info:
-  - degree: 车辆工程（硕士）
-    university: 兰州交通大学
-    time: 2017.9 - 2020.7
-  - degree: 车辆工程（本科）
-    university: 西华大学
-    time: 2013.9 - 2017.7
+    - degree: 车辆工程（硕士）
+      university: 兰州交通大学
+      time: 2017.9 - 2020.7
+    - degree: 车辆工程（本科）
+      university: 西华大学
+      time: 2013.9 - 2017.7
 
 experiences:
   title: 工作经验
   info:
-  - role: 算法工程师
-    time: 2023.9 - 至今
-    company: 三江航天远方科技公司
-    details: |
-      - 负责信号产品的相关算法研究、落地
-      - 与外部高效合作，配合产出实验结果
-
-  - role: 算法工程师
-    time: 2021.5 - 2023.9
-    company: 成都鼎桥通信技术有限公司
-    details: |
-      - 参与公司异腾计算AI相关业务，负责相关产品线的交付对接和研发任务
-      - 参与华为异腾开源社区生态建设
-
-  - role: 算法工程师
-    time: 2020.7 - 2021.5
-    company: 北京交控科技股份有限公司
-    details: |
-      - 负责调研当前目标检测主流算法，用于产品研发升级改造
-      - 负责视觉需求分析、模型选型及任务实现
-      - 编写相关技术文档与专利申请材料
+    - role: 算法工程师
+      time: 2023.9 - 至今
+      company: 三江航天远方科技公司
+      details: |
+        1. 负责信号产品的相关算法研究、落地  
+        2. 与外部高效合作，配合产出实验结果
+    - role: 算法工程师
+      time: 2021.5 - 2023.9
+      company: 成都鼎桥通信技术有限公司
+      details: |
+        1. 参与公司异腾计算AI相关业务，负责相关产品线的交付对接和研发任务  
+        2. 参与华为异腾开源社区生态建设
+    - role: 算法工程师
+      time: 2020.7 - 2021.5
+      company: 北京交控科技股份有限公司
+      details: |
+        1. 负责调研当前目标检测主流算法，用于产品研发升级改造  
+        2. 负责视觉感知产品需求分析，设计合理模型及算法实现需求任务  
+        3. 编写相关技术文档及项目所需专利申请工作
 
 projects:
   title: 项目经验
   assignments:
-  - title: 无人驾驶的道路风险区域预测模型研究
-    time: 2024.11 - 2025.6
-    tagline: |
-      IROS2025 已投稿，项目聚焦 Ghost Probe Zone 场景建模，融合 RGB + Grad-CAM + PCD 特征，提出 DPGP 框架，最终达到 0.9446 F1 Score。
-      - 构建 KITTI 数据集扩展标注
-      - 选用 Faster R-CNN、YOLOv8、RT-DETRv2 等算法作为 baseline
-      - 提出 DP2G 多模态融合预测框架
+    - title: 无人驾驶的道路风险区域预测模型研究
+      time: 2024.11 - 2025.6
+      tagline: |
+        项目成果已被 IROS2025 接收，提出 DPGP 框架，融合 2D 图像语义与 3D 几何结构信息实现“Ghost Probe Zone”预测。  
+        - 自建数据集，标注道路风险边界，引入高斯热力图 soft label  
+        - 选用 Faster R-CNN、YOLOv8、RT-DETRv2 为 baseline，评估 Recall/Precision/F1  
+        - RGB+Grad+PCD 融合结果：Recall 0.9150，Precision 0.9761，F1 Score 0.9446
+    - title: 华为异腾开源社区生态建设（鼎桥）
+      time: 2021.5 - 2023.9
+      tagline: |
+        1. 负责开源模型迁移到昇腾 NPU，完成推理部署、训练验证全流程  
+        2. 基于 Ascend 310/910 实现模型加载、运行分析、算子调度优化  
+        3. 编写 Benchmark 脚本，统计推理延迟、吞吐、NPU 利用率，输出性能报告  
+        4. 撰写部署文档与 README，支持用户一键训练/推理及结果复现
 
 skills:
-  title: 技能专长
+  title: 个人技能
   toolset:
-  - name: PyTorch / TensorFlow / MindSpore
-    level: 95%
-  - name: OpenCV / Matplotlib / Sklearn
-    level: 90%
-  - name: Ascend 310/910 NPU部署
-    level: 90%
-  - name: ONNX 模型转换与推理
-    level: 85%
-  - name: Python / C++ / Shell
-    level: 90%
-  - name: Benchmark 脚本编写 / 推理性能分析
-    level: 90%
+    - name: PyTorch / TensorFlow / PaddlePaddle
+      level: 95%
+    - name: OpenCV / matplotlib / sklearn
+      level: 90%
+    - name: Ascend NPU / ONNX / Atlas / Jetson
+      level: 90%
+    - name: Python / C++ / Shell
+      level: 90%
+    - name: 图像/信号建模与特征工程
+      level: 85%
+    - name: Benchmark 与推理性能分析
+      level: 90%
