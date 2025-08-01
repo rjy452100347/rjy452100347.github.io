@@ -1,75 +1,286 @@
-sidebar:
-  position: left
-  about: false
-  education: false
-  name: 饶家义
-  tagline: 算法工程师
-  avatar: profile.png
-  email: 452100347@qq.com
-  phone: "13330609937"
-  timezone: Asia/Shanghai
-  location: 四川成都
-  languages:
-    title: 语言能力
-    info:
-      - idiom: 中文
-        level: 母语
-      - idiom: 英文
-        level: CET-6
-  interests:
-    title: 兴趣
-    info:
-      - item: 技术演讲
-      - item: 系统演示
-      - item: 视觉算法
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
 
+sidebar:
+  position: right # position of the sidebar : left or right
+  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Alan Doe
+  tagline: Full Stack Developer
+  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: example@email.com
+  phone: 012 345 6789
+  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  citizenship:
+  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
+  linkedin: alandoe
+  xing: alandoe
+  github: jekyll
+  telegram: # add your nickname without '@' sign
+  gitlab:
+  bitbucket:
+  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  twitter: '@jekyllrb'
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+  mastodon: # Please include your full Mastodon link here.
+  hackerrank: # Please provide your HackerRank username.
+  leetcode: # Please provide your LeetCode username.
+  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+
+  languages:
+    title: Languages
+    info:
+    - idiom: English
+      level: Native
+
+    - idiom: French
+      level: Professional
+
+    - idiom: Spanish
+      level: Professional
+
+  interests:
+    title: Interests
+    info:
+    - item: Climbing
+      link:
+
+
+    - item: Snowboarding
+      link:
+
+
+    - item: Cooking
+      link:
+
+
+career-profile:
+  title: Career Profile
+  summary: |
+    Summarise your career here lorem ipsum dolor sit amet, consectetuer
+    adipiscing elit. You can [download this free resume/CV template here]().
+    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
+    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    Donec quam felis, ultricies nec, pellentesque eu.
+    Second paragraph if required.
 education:
-  title: 教育背景
+  title: Education
   info:
-    - degree: 车辆工程（硕士）
-      university: 兰州交通大学
-      time: 2017.9 - 2020.7
-    - degree: 车辆工程（本科）
-      university: 西华大学
-      time: 2013.9 - 2017.7
+  - degree: MSc in Computer Science
+    university: University of London
+    time: 2011 - 2012
+    details: |
+      Describe your study here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+      sociis natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      pretium quis, sem.
+        - Bullet point
+        - Bullet point
+  - degree: BSc in Applied Mathematics
+    university: Bristol University
+    time: 2007 - 2011
+    details: |
+      Describe your study here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+      sociis natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      pretium quis, sem.
+        - Bullet point
+        - Bullet point
 
 experiences:
-  title: 工作经验
+  title: Experiences
   info:
-    - role: 算法工程师
-      time: 2023.9 - 至今
-      company: 三江航天远方科技公司
-      details:
-        - 负责信号产品的相关算法研究与落地
-        - 与外部高效合作，配合产出实验结果
-    - role: 算法工程师
-      time: 2021.5 - 2023.9
-      company: 成都鼎桥通信技术有限公司
-      details:
-        - 参与公司异腾计算 AI 相关业务，负责产品线交付对接与研发
-        - 参与华为昇腾开源社区生态建设，推动模型迁移与部署
-    - role: 算法工程师
-      time: 2020.7 - 2021.5
-      company: 北京交控科技股份有限公司
-      details:
-        - 调研1111主流目标检测算法，用于产品升级改造
-        - 负责视觉感知产品需求分析与模型/算法设计
-        - 编写技术文档，并参与相关专利申请工作
+  - role: Lead Developer
+    time: 2015 - Present
+    company: Startup Hubs, San Francisco
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
+      error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+      architecto beatae vitae dicta sunt explicabo.
+        - Bullet point
+        - Bullet point
+  - role: Senior Software Engineer
+    time: 2014 - 2015
+    company: Google, London
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
+        - Bullet point
+        - Bullet point
+  - role: UI Developer
+    time: 2012 - 2014
+    company: Amazon, London
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
+        - Bullet point
+        - Bullet point
+
+certifications:
+  title: Certifications
+  list:
+  - name: CV Builder
+    start: 2020
+    end: 2021
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.google.com
+    credentialname: Google
+    details: |
+      Details about cert. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
+
+      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+      fringilla vel. Ut euismod, sem sed vulputate venenatis,
+      justo diam viverra velit, sed rhoncus leo leo eu justo.
+      Suspendisse placerat risus ante, sed porta nisi blandit at.
+  - name: Git learning
+    start: 2019
+    end:
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.github.com
+    credentialname: Github
+    details: |
+      Older certification. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
 
 projects:
-  title: 项目经验
+  title: Projects
+  intro: >
+    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
   assignments:
-    - title: 无人驾驶的道路风险区域预测模型研究
-      time: 2024.11 - 2025.6
-      details:
-        - 项目成果已被 IROS2025 接收，提出 DPGP 框架，融合 2D 图像语义与 3D 几何结构信息，实现 “Ghost Probe Zone” 风险区域预测
-        - 定义任务数据背景：基于自采与 KITTI 数据，标注道路风险区域边界，并引入高斯模糊生成 soft label 提升鲁棒性
-        - 选取 Faster R-CNN、YOLOv8、RT-DETRv2 作为 baseline，全面评估 Recall / Precision / F1，并与 DPGP 进行对比
-        - 设计跨模态融合机制与注意力增强策略，有效提升模型在复杂场景下的识别精度
-    - title: 华为昇腾开源社区生态建设（鼎桥）
-      time: 2021.5 - 2023.9
-      details:
-        - 参与昇腾平台的开源模型迁移、训练与部署，使用 ascend-pytorch / MindSpore 复现多个 PyTorch 基线
-        - 设计并实现性能测试脚本，量化迁移后模型在异构硬件（昇腾310/910）上的推理吞吐与精度损失
-        - 编写部署与使用文档，形成社区标准化 onboarding 手册，提升新接入模型的复现速度 30%
-        - 与上游合作方协同优化推理流程，解决模型精度漂移与量化不稳定问题
+  - title: Velocity
+    link: "#hook"
+    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+  - title: DevStudio
+    link: "#"
+    tagline: "A responsive website template designed to help web developers/designers market their services."
+
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+oss:
+  title: OSS Contributions
+  intro: >
+    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  contributions:
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+publications:
+  title: Publications
+  intro: |
+    You can list your publications in this section. Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    bibendum fringilla a eu lectus.
+  papers:
+  - title: The Art of Computer Programming
+    link: "#"
+    authors: Donald E. Knuth
+    conference: Addison-Wesley, 1968
+
+  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+    link: "#"
+    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+  - title: A syntax directed compiler for Algol 60
+    link: "#"
+    authors: Edgar T. Irons
+    conference: "Comm. ACM 4 (1961), 51–55"
+
+recommendations:
+  title: Recommendations
+  list:
+  - person: Yareli Perez
+    email: perezyareli@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      Alan Doe is a super employee!
+  - person: Lara Henderson
+    email: larah@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      I would like to work with Alan Doe again!
+
+      He is a great employee!
+
+skills:
+  title: Skills &amp; Proficiency
+
+  toolset:
+  - name: Python & Django
+    level: 98%
+
+  - name: Javascript & jQuery
+    level: 98%
+
+  - name: Angular
+    level: 98%
+
+  - name: HTML5 & CSS
+    level: 95%
+
+  - name: Ruby on Rails
+    level: 85%
+
+  - name: Sketch & Photoshop
+    level: 60%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
