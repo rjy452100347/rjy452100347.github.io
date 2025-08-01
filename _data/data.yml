@@ -67,17 +67,6 @@ experiences:
         - 负责调研当前目标检测主流算法，用于产品研发升级改造
         - 负责视觉需求分析、模型选型及任务实现
         - 编写相关技术文档与专利申请材料
-projects:
-  title: 项目经验
-    assignments:
-    - title: 无人驾驶的道路风险区域预测模型研究
-      time: 2024.11 - 2025.6
-      link: "#hook"
-      details: |
-          - 构建 KITTI 数据集扩展标注
-          - 选用 Faster R-CNN、YOLOv8、RT-DETRv2 等算法作为 baseline
-          - 提出 DP2G 多模态融合预测框架
-
 oss:
   title: OSS Contributions
   intro: >
