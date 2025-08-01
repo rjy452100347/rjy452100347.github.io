@@ -8,7 +8,7 @@ sidebar:
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: 饶1家义
+  name: 饶2家义
   tagline: 算法工程师
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
@@ -116,7 +116,7 @@ projects:
   - title: 无人驾驶的道路风险区域预测模型研究
     time: 2024.11 - 2025.6
     link: "#hook"
-    tagline: |
+    details: |
       IROS2025 已投稿，项目聚焦 Ghost Probe Zone 场景建模，融合 RGB + Grad-CAM + PCD 特征，提出 DPGP 框架，最终达到 0.9446 F1 Score。
         - 构建 KITTI 数据集扩展标注
         - 选用 Faster R-CNN、YOLOv8、RT-DETRv2 等算法作为 baseline
