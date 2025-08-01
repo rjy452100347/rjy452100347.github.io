@@ -75,9 +75,15 @@ projects:
   assignments:
   - title: 无人驾驶的道路风险区域预测模型研究
     tagline: |
-        - 负责调研当前目标检测主流算法，用于产品研发升级改造
-        - 负责视觉需求分析、模型选型及任务实现
-        - 编写相关技术文档与专利申请材料
+      **成果：** 顶会（IROS 2025）已接收论文《DPGP: A Hybrid 2D-3D Dual Path Potential Ghost Probe Zone Prediction Framework for Safe Autonomous Driving》。  
+      **背景：** 实现无人驾驶场景下对潜在“Ghost Probe Zone”（遮挡盲区突发风险区域）的精准建模。  
+      **工作内容：**
+      - 定义任务与数据：基于自采与 KITTI 数据集，标注道路风险区域边界，采用高斯模糊热力图生成 soft label。  
+      - 目标检测基线：选取 Faster R-CNN、YOLOv8、RT-DETRv2 作为检测性能基线，设计 Recall / Precision / F1 Score 评估体系。  
+      - 模型提出：构建 DPGP 框架，融合 2D 图像语义（RGB + Grad）与 3D 几何（PCD）信息，实现对潜在盲区的高精度预测。  
+      - 消融分析：针对不同输入组合做全面消融，评估各模态对性能的贡献。  
+      **结果：** RGB+Grad+PCD 组合达到最佳，Recall=0.9150，Precision=0.9761，F1=0.9446，相较于各基线显著提升。
+      link: https://your-paper-link.example.com  # 如果有公开预印本或项目页面可以加
   - title: DevStudio
     link: "#"
     tagline: "A responsive website template designed to help web developers/designers market their services."
