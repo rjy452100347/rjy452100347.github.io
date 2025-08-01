@@ -6,7 +6,7 @@ sidebar:
   tagline: 算法工程师
   avatar: profile.png
   email: 452100347@qq.com
-  phone: '13330609937'
+  phone: "13330609937"
   timezone: Asia/Shanghai
   location: 四川成都
   languages:
@@ -40,21 +40,21 @@ experiences:
       time: 2023.9 - 至今
       company: 三江航天远方科技公司
       details:
-        - 负责信号产品的相关算法研究、落地
+        - 负责信号产品的相关算法研究与落地
         - 与外部高效合作，配合产出实验结果
     - role: 算法工程师
       time: 2021.5 - 2023.9
       company: 成都鼎桥通信技术有限公司
       details:
-        - 参与公司异腾计算AI相关业务，负责相关产品线的交付对接和研发任务
-        - 参与华为异腾开源社区生态建设
+        - 参与公司异腾计算 AI 相关业务，负责产品线交付对接与研发
+        - 参与华为昇腾开源社区生态建设，推动模型迁移与部署
     - role: 算法工程师
       time: 2020.7 - 2021.5
       company: 北京交控科技股份有限公司
       details:
-        - 负责调研当前目标检测主流算法，用于产品研发升级改造
-        - 负责视觉感知产品需求分析，设计合理模型及算法实现需求任务
-        - 编写相关技术文档及项目所需专利申请工作
+        - 调研主流目标检测算法，用于产品升级改造
+        - 负责视觉感知产品需求分析与模型/算法设计
+        - 编写技术文档，并参与相关专利申请工作
 
 projects:
   title: 项目经验
@@ -62,7 +62,7 @@ projects:
     - title: 无人驾驶的道路风险区域预测模型研究
       time: 2024.11 - 2025.6
       details:
-        - 项目成果已被 IROS2025 接收，提出 DPGP 框架，融合 2D 图像语义与 3D 几何结构信息实现 “Ghost Probe Zone” 预测
-        - 定义任务数据背景，基于自采及 KITTI 数据集，标注出道路风险区域边界，引入高斯模糊生成 soft label
-        - 选用 Faster R-CNN、YOLOv8、RT-DETRv2 为 baseline，评估 Recall / Precision / F1
-        - 提出 D
+        - 项目成果已被 IROS2025 接收，提出 DPGP 框架，融合 2D 图像语义与 3D 几何结构信息，实现 “Ghost Probe Zone” 风险区域预测
+        - 定义任务数据背景：基于自采与 KITTI 数据，标注道路风险区域边界，并引入高斯模糊生成 soft label 提升鲁棒性
+        - 选取 Faster R-CNN、YOLOv8、RT-DETRv2 作为 baseline，全面评估 Recall / Precision / F1，并与 DPGP 进行对比
+        - 设计跨模态融合机制与注意力增强策略，有效提升模型在复杂场景下的识别精度
