@@ -79,18 +79,26 @@ projects:
       **背景：** 实现无人驾驶场景下对潜在“Ghost Probe Zone”（遮挡盲区突发风险区域）的精准建模。  
       **工作内容：**
       - 定义任务与数据：基于自采与 KITTI 数据集，标注道路风险区域边界，采用高斯模糊热力图生成 soft label。  
-      - 目标检测基线：选取 Faster R-CNN、YOLOv8、RT-DETRv2 作为检测性能基线，设计 Recall / Precision / F1 Score 评估体系。  
-      - 模型提出：构建 DPGP 框架，融合 2D 图像语义（RGB + Grad）与 3D 几何（PCD）信息，实现对潜在盲区的高精度预测。  
-      - 消融分析：针对不同输入组合做全面消融，评估各模态对性能的贡献。  
+      - 目标检测基线：选取 Faster R-CNN、YOLOv8、RT-DETRv2 作为检测性能基线，评估指标为Recall、Precision、F1 Score。  
+      - 模型提出：构建 DPGP 框架，融合 2D 图像语义（RGB + Grad）与 3D 几何（点云）信息，实现对潜在盲区的高精度预测。  
+      - 消融分析：针对不同输入组合做详细的消融实验，评估各模态对性能的贡献。  
       **结果：** RGB+Grad+PCD 组合达到最佳，Recall=0.9150，Precision=0.9761，F1=0.9446，相较于各基线显著提升。
-      link: https://your-paper-link.example.com  # 如果有公开预印本或项目页面可以加
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
+  - title: 华为昇腾开源社区生态建设（鼎桥）
+    tagline: |
+      **工作内容：**
+      - 负责华为昇腾开源社区项目中开源模型在昇腾平台的迁移、训练与推理部署，完成端到端代码开发与性能验证。 
+      - 基于 Ascend310/910 系列芯片构建高性能推理流水线，涵盖模型加载、调度、算子优化与运行时分析，保障对标源模型的精度一致性与性能提升。
+      - 使用 Ascend-PyTorch / MindSpore 框架将开源 PyTorch 模型移植到昇腾 NPU（910），实现训练与部署，系统性对比源模型的精度与吞吐/延迟指标。
+      - 编写可复现的 benchmark 脚本与性能测试套件，采集并分析关键性能指标（如：平均推理延迟、吞吐量、NPU 利用率），输出优化建议
+      - 撰写高质量 README 和使用文档，包含一键部署、训练/推理流水、性能对比结果和复现步骤，提升社区可用性与贡献者采纳率。
 
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+  - title: 复杂环境下信号灯识别（传统图像处理项目）
+    tagline: |
+      **工作内容：**
+      - 设计并实现“绿灯优先 → 红灯回退 → 白灯兜底”多阶段检测逻辑，构建在复杂光照与遮挡场景下鲁棒的信号灯 ROI 预处理模块，确保至少能获取有效候选区域。  
+      - 基于 HSV 颜色空间对绿/红/白灯分别建模，构建粗/精定位流程：整帧检测 → 动态扩张 ROI → ROI 内细粒度再检测，采用联通区域面积约束进行空间筛选。  
+      - 设计形态学增强管道（开闭运算 + 膨胀）去噪与补洞，提取轮廓并生成结构化特征（bbox、中心、面积、包围几何），基于信号灯特征几位位置关系，筛选候选结果。  
+      - 采用sobel算子，进行水平梯度计算（基于梯度投影）剔除反射/水面干扰区域的误检，结合 gamma 校正提升弱光下信号可见性，增强环境适应性。  
 
   - title: Atom
     link: "#"
