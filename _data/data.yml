@@ -39,22 +39,22 @@ experiences:
     - role: 算法工程师
       time: 2023.9 - 至今
       company: 三江航天远方科技公司
-      details: |
-        1. 负责信号产品的相关算法研究、落地  
-        2. 与外部高效合作，配合产出实验结果
+      details:
+        - 负责信号产品的相关算法研究、落地
+        - 与外部高效合作，配合产出实验结果
     - role: 算法工程师
       time: 2021.5 - 2023.9
       company: 成都鼎桥通信技术有限公司
-      details: |
-        1. 参与公司异腾计算AI相关业务，负责相关产品线的交付对接和研发任务  
-        2. 参与华为异腾开源社区生态建设
+      details:
+        - 参与公司异腾计算AI相关业务，负责相关产品线的交付对接和研发任务
+        - 参与华为异腾开源社区生态建设
     - role: 算法工程师
       time: 2020.7 - 2021.5
       company: 北京交控科技股份有限公司
-      details: |
-        1. 负责调研当前目标检测主流算法，用于产品研发升级改造  
-        2. 负责视觉感知产品需求分析，设计合理模型及算法实现需求任务  
-        3. 编写相关技术文档及项目所需专利申请工作
+      details:
+        - 负责调研当前目标检测主流算法，用于产品研发升级改造
+        - 负责视觉感知产品需求分析，设计合理模型及算法实现需求任务
+        - 编写相关技术文档及项目所需专利申请工作
 
 projects:
   title: 项目经验
@@ -65,30 +65,4 @@ projects:
         - 项目成果已被 IROS2025 接收，提出 DPGP 框架，融合 2D 图像语义与 3D 几何结构信息实现 “Ghost Probe Zone” 预测
         - 定义任务数据背景，基于自采及 KITTI 数据集，标注出道路风险区域边界，引入高斯模糊生成 soft label
         - 选用 Faster R-CNN、YOLOv8、RT-DETRv2 为 baseline，评估 Recall / Precision / F1
-        - 提出 DPGP 框架，融合 2D 图像语义信息与 3D 几何结构信息，实现对潜在盲区（ghost probe zone）的高精度预测
-        - 详细设计并完成各种输入数据下的消融实验，分析各数据对实验结果影响
-        - RGB+Grad+PCD 得到最高精度指标：Recall 0.9150、Precision 0.9761、F1 Score 0.9446，相较于基线性能最优
-
-    - title: 华为异腾开源社区生态建设（鼎桥）
-      time: 2021.5 - 2023.9
-      details:
-        - 负责开源模型迁移到昇腾 NPU，完成推理部署、训练验证全流程
-        - 基于 Ascend 310/910 实现模型加载、运行分析、算子调度优化
-        - 编写 Benchmark 脚本，统计推理延迟、吞吐、NPU 利用率，输出性能报告
-        - 撰写部署文档与 README，支持用户一键训练 / 推理及结果复现
-
-skills:
-  title: 个人技能
-  toolset:
-    - name: PyTorch / TensorFlow / PaddlePaddle
-      level: 95%
-    - name: OpenCV / matplotlib / sklearn
-      level: 90%
-    - name: Ascend NPU / ONNX / Atlas / Jetson
-      level: 90%
-    - name: Python / C++ / Shell
-      level: 90%
-    - name: 图像/信号建模与特征工程
-      level: 85%
-    - name: Benchmark 与推理性能分析
-      level: 90%
+        - 提出 D
