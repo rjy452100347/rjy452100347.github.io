@@ -8,7 +8,7 @@ sidebar:
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: 饶家义
+  name: 饶家义1
   tagline: 算法工程师
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
