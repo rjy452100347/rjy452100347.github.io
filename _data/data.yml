@@ -100,14 +100,14 @@ projects:
       - 设计形态学增强管道（开闭运算 + 膨胀）去噪与补洞，提取轮廓并生成结构化特征（bbox、中心、面积、包围几何），基于信号灯特征几位位置关系，筛选候选结果。  
       - 采用sobel算子，进行水平梯度计算（基于梯度投影）剔除反射/水面干扰区域的误检，结合 gamma 校正提升弱光下信号可见性，增强环境适应性。  
 
-  - title: 论文复现能力说明
+  - title: 论文复现能力
     tagline: |
       **论文复现案例：**（未开源，仅通过阅读论文完成复现）
-        《TempT: Temporal consistency for Test-time adaptation》
-        《BVINet: Unlocking Blind Video Inpainting with Zero Annotations》
-        《Point Linking Network for Object 
-        《Exploring emotional aspects of travel concepts via travel photos based on contrastive language-image pretraining》
-        《Temporally Distributed Networks for Fast Video Semantic Segmentation》
+      - 《TempT: Temporal consistency for Test-time adaptation》
+      - 《BVINet: Unlocking Blind Video Inpainting with Zero Annotations》
+      - 《Point Linking Network for Object 
+      - 《Exploring emotional aspects of travel concepts via travel photos based on contrastive language-image pretraining》
+      - 《Temporally Distributed Networks for Fast Video Semantic Segmentation》
       **复现思路说明：**
       - 阅读原始论文与其引用的参考文献（未开源的模型常常结构中，参考了引用文献的模型结构），梳理模型方法架构、创新点结构和数学公式；
       - 分析所用数据集及预处理流程，复现输入格式与训练/测试管道；
@@ -124,21 +124,17 @@ projects:
       - 构建初始人工标注集训练模型，基于模型预测结果由人工进行高质量校正，推动“标注 → 模型 → 预标注 → 校正->训练->辅助标注->训练”迭代，持续提升标签质量。
       
 oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  title: 个人技能
   contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+  - title: 校园金话筒
+    tagline: 大学时期曾获校园金话筒大赛二等奖，具备优秀的演讲能力，产品系统演示能力，也曾多次兼职好友婚礼司仪
 
-  - title: Atom
+  - title: 编程语言
     link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
+    tagline: C++/Python/Matlab，具备将python/Matlab代码转为C++工程化部署的能力
+  - title: 深度学习技能
     link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+    tagline: 熟悉pytorch、TensorFlow等常用深度学习框架，拥有分布式训练、高速推理部署经验，熟悉华为Atlas系列、英伟达jetson系列移动
 
 publications:
   title: Publications
