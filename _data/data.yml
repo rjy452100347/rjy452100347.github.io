@@ -30,7 +30,7 @@ sidebar:
   interests:
     title: 兴趣
     info:
-    - item: 中羽5级羽毛球
+    - item: 羽毛球-中羽4.5级
       link:
 
 
@@ -82,12 +82,12 @@ projects:
       - 目标检测基线：选取 Faster R-CNN、YOLOv8、RT-DETRv2 作为检测性能基线，评估指标为Recall、Precision、F1 Score。  
       - 模型提出：构建 DPGP 框架，融合 2D 图像语义（RGB + Grad）与 3D 几何（点云）信息，实现对潜在盲区的高精度预测。  
       - 消融分析：针对不同输入组合做详细的消融实验，评估各模态对性能的贡献。  
-      **结果：** RGB+Grad+PCD 组合达到最佳，Recall=0.9150，Precision=0.9761，F1=0.9446，相较于各基线显著提升。
+    **结果：** RGB+Grad+PCD 组合达到最佳，Recall=0.9150，Precision=0.9761，F1=0.9446，相较于各基线显著提升。
   - title: 华为昇腾开源社区生态建设（鼎桥）
     tagline: |
       **工作内容：**
       - 负责华为昇腾开源社区项目中开源模型在昇腾平台的迁移、训练与推理部署，完成端到端代码开发与性能验证。 
-      - 基于 Ascend310/910 系列芯片构建高性能推理流水线，涵盖模型加载、调度、算子优化与运行时分析，保障对标源模型的精度一致性与性能提升。
+      - 基于 Ascend310/910 系列芯片构建高性能推理流水线，涵盖模型加载、调度、算子优化分析与运行耗时分析，保障对标源模型的精度一致性与性能提升。
       - 使用 Ascend-PyTorch / MindSpore 框架将开源 PyTorch 模型移植到昇腾 NPU（910），实现训练与部署，系统性对比源模型的精度与吞吐/延迟指标。
       - 编写可复现的 benchmark 脚本与性能测试套件，采集并分析关键性能指标（如：平均推理延迟、吞吐量、NPU 利用率），输出优化建议
       - 撰写高质量 README 和使用文档，包含一键部署、训练/推理流水、性能对比结果和复现步骤，提升社区可用性与贡献者采纳率。
@@ -108,6 +108,7 @@ projects:
       - 《Point Linking Network for Object 
       - 《Exploring emotional aspects of travel concepts via travel photos based on contrastive language-image pretraining》
       - 《Temporally Distributed Networks for Fast Video Semantic Segmentation》
+      
       **复现思路说明：**
       - 阅读原始论文与其引用的参考文献（未开源的模型常常结构中，参考了引用文献的模型结构），梳理模型方法架构、创新点结构和数学公式；
       - 分析所用数据集及预处理流程，复现输入格式与训练/测试管道；
