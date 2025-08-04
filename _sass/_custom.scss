@@ -1,3 +1,48 @@
 .project-tagline {
   line-height: 1.8; // 根据需要可以设置为 1.6、2.0 等
 }
+body.pdf-export {
+  font-size: 10pt;
+  background: white !important;
+  padding: 20px;
+
+  .wrapper {
+    width: 800px !important;
+    padding: 0;
+    margin: auto;
+    background: white;
+  }
+
+  .sidebar-wrapper {
+    width: 250px;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    word-break: break-word;
+  }
+
+  .main-wrapper {
+    width: calc(100% - 250px);
+    float: left;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+
+  .experience-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    word-break: break-word;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  // 隐藏按钮等导出无用元素
+  .pdf-button,
+  .print-button {
+    display: none !important;
+  }
+}
