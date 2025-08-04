@@ -82,7 +82,7 @@ projects:
       - 目标检测基线：选取 Faster R-CNN、YOLOv8、RT-DETRv2 作为检测性能基线，评估指标为Recall、Precision、F1 Score。  
       - 模型提出：构建 DPGP 框架，融合 2D 图像语义（RGB + Grad）与 3D 几何（点云）信息，实现对潜在盲区的高精度预测。  
       - 消融分析：针对不同输入组合做详细的消融实验，评估各模态对性能的贡献。  
-    **结果：** RGB+Grad+PCD 组合达到最佳，Recall=0.9150，Precision=0.9761，F1=0.9446，相较于各基线显著提升。
+      **结果：** RGB+Grad+PCD 组合达到最佳，Recall=0.9150，Precision=0.9761，F1=0.9446，相较于各基线显著提升。
   - title: 华为昇腾开源社区生态建设（鼎桥）
     tagline: |
       **工作内容：**
