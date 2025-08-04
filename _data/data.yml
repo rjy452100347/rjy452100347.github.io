@@ -135,4 +135,4 @@ oss:
     tagline: C++/Python/Matlab，具备将python/Matlab代码转为C++工程化部署的能力
   - title: 深度学习技能
     link: "#"
-    tagline: 熟悉pytorch、TensorFlow等常用深度学习框架，拥有分布式训练、高速推理部署经验，熟悉华为Atlas系列、英伟达jetson系列移动
+    tagline: 熟悉pytorch、TensorFlow等常用深度学习框架，拥有分布式训练、高速推理部署经验，熟悉华为Atlas系列、英伟达jetson系列边缘计算设备
