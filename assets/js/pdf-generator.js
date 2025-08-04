@@ -8,25 +8,25 @@ function print() {
 }
 
 function generatePDF() {
-  // Get the print layout URL
   const printURL = window.location.origin + "/print";
 
-  // Fetch the print layout content
   fetch(printURL)
     .then((response) => response.text())
     .then((html) => {
-      // Create a temporary container
+      // 创建临时容器并插入到 DOM
       const container = document.createElement("div");
       container.innerHTML = html;
+      container.classList.add("pdf-export");
+      document.body.appendChild(container);
 
-      // Get name from the DOM (as defined in data.yml)
-      const name = document.querySelector(".name").textContent;
-      // Format filename: replace spaces with underscores and append _resume.pdf
+      // 获取名字（从容器中查找）
+      const nameElement = container.querySelector(".name");
+      const name = nameElement ? nameElement.textContent : "Resume";
       const filename = `${name.replace(/\s+/g, "_")}_Resume.pdf`;
 
-      // Configure pdf options
+      // 配置 PDF 生成参数
       const opt = {
-        margin: 10,
+        margin: 0,
         filename: filename,
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: {
@@ -41,11 +41,15 @@ function generatePDF() {
         },
       };
 
-      // Generate PDF
+      // 生成 PDF
       html2pdf()
         .set(opt)
         .from(container)
         .save()
+        .then(() => {
+          // 导出完成后清理 DOM
+          document.body.removeChild(container);
+        })
         .catch((err) => console.error("Error generating PDF:", err));
     })
     .catch((err) => console.error("Error fetching print layout:", err));
