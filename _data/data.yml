@@ -82,6 +82,14 @@ projects:
       - 模型提出：构建 DPGP 框架，融合 2D 图像语义（RGB + Grad）与 3D 几何（点云）信息，实现对潜在盲区的高精度预测。  
       - 消融分析：针对不同输入组合做详细的消融实验，评估各模态对性能的贡献。  
       **结果：** RGB+Grad+PCD 组合达到最佳，Recall=0.9150，Precision=0.9761，F1=0.9446，相较于各基线显著提升。
+  - title: 基于大模型指令微调的图像情感分析
+    tagline: |
+      **背景：** 通过大语言模型，采用问答形式，完成图像情感分析。  
+      **工作内容：**
+      - 数据构造：构建情绪与结构 Emotion Attributes；用 BLIP-2 生成图像 caption；基于二者设计 System Prompt，调用 GPT-4 生成 Question–Answer 指令数据用于训练监督
+      - 指令微调架构：（a）图像特征采用冻结的ViT模型提取图像patch embeddings；（b）文本特征通过BertTokenizer对情绪指令分词为 tokens；（c）采用Q-Former结构先经 Self-Attention 融合文本，再以 Cross-Attention 按指令从图像特征取材，得到指令感知的视觉向量。
+      - 语言头：冻结 Vicuna-13B 作为 LLM 输出头，接收“视觉前缀 + 指令”生成情绪类别与理由；训练仅微调 Q-Former 与映射层。
+      - 模型表现：EmoSet 测试集上，采用指令微调后，准确率由 42.20% 提升到83.36%
   - title: 华为昇腾开源社区生态建设（鼎桥）
     tagline: |
       **工作内容：**
