@@ -48,6 +48,14 @@ experiences:
   title: 工作经历
   info:
   - role: 算法工程师
+    time: 2026.1 - 至今
+    company: 曙光信息产业股份有限公司
+    details: |
+        - 负责大模型的国产硬件部署适配
+
+
+  
+  - role: 算法工程师
     time: 2023.9 - 2025.9
     company: 三江航天远方科技公司（央属国企）
     details: |
